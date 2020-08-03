@@ -1,0 +1,182 @@
+
+
+/*********************************************************
+**********************************************************
+*********************************************************/
+
+.formsubmit-flyr {
+
+
+    background-color:white;
+
+    width   :100%;
+    height  :auto;
+
+    padding :0 0 0 0; 
+    margin  :0 0 0 0;
+
+    position:absolute;   
+    z-index:3;
+    top:0;
+    left:0;
+
+
+}
+
+
+
+/*********************************************************
+*********************************************************/
+
+.formsubmit-flyr-message {
+
+
+    background-color:white;
+
+    width   :94%;
+    height  :auto;
+
+    padding :0 0 4px 0; 
+    margin  :0 0 0 3%;
+
+    position:relative;  
+    float:left; 
+
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#000;
+    text-align:center;
+
+  
+}
+
+
+
+
+
+/*************************************
+//button
+*************************************/
+
+.formsubmit-flyr-button {
+  
+   
+    background-color:#1a1926; 
+
+    width:100%;
+    height:auto;
+    margin: 12px 0 12px 0;
+    padding:8px 0 7px 0;
+
+    position:relative;
+    float:left;
+
+    font-size: 14px;
+    font-weight:500;
+    text-align:center;
+    color:white;
+
+    border-radius:7px;
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+/*********************************************************
+*********************************************************/
+
+.formsubmit-flyr-printout {
+
+
+    background-color:white;
+
+    width   :94%;
+    height  :auto;
+
+    padding :0 0 4px 0; 
+    margin  :0 0 0 3%;
+
+    position:relative;  
+    float:left; 
+
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+    color:#000;
+    text-align:center;
+
+  
+}
+
+
+
+    .formsubmit-flyr-printout-name {
+
+
+        background-color:white;
+
+        width   :94%;
+        height  :auto;
+
+        padding :0 0 4px 0; 
+        margin  :0 0 0 3%;
+
+        position:relative;  
+        float:left; 
+
+        font-family:Verdana, Geneva, sans-serif;
+        font-size:16px;
+        font-weight:normal;
+        color:#000;
+        text-align:center;
+
+    
+    }
+
+    .formsubmit-flyr-printout-value {
+
+
+        background-color:white;
+
+        width   :94%;
+        height  :auto;
+
+        padding :0 0 4px 0; 
+        margin  :0 0 0 3%;
+
+        position:relative;  
+        float:left; 
+
+        font-family:Verdana, Geneva, sans-serif;
+        font-size:16px;
+        font-weight:normal;
+        color:#000;
+        text-align:center;
+
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
