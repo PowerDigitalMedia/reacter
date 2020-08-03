@@ -1,6 +1,6 @@
 
 ***
-cd ~/Work/PROJEX/github/repos/pixabay-api-request
+cd ~/Work/PROJEX/github/repos/reacter
 
 
 
@@ -18,11 +18,11 @@ git status
 create a new repository on the command line
 --------------------------------------------------
 
-echo "# pixabay-api-request" >> README.md
+echo "# reacter" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin https://github.com/PowerDigitalMedia/pixabay-api-request.git
+git remote add origin https://github.com/PowerDigitalMedia/reacter.git
 git push -u origin master
 
 
@@ -44,6 +44,13 @@ git checkout -b dev
 
 
 
+*** 
+git checkout master
+
+***
+git checkout dev
+
+
 
 
 
@@ -55,14 +62,14 @@ update files
 ***
 git add .
 git commit -m "prod changes" 
-git remote add origin https://github.com/PowerDigitalMedia/pixabay-api-request.git
+git remote add origin https://github.com/PowerDigitalMedia/reacter.git
 git push -u origin master
 
 
 ***
 git add .
 git commit -m "dev changes" 
-git remote add origin https://github.com/PowerDigitalMedia/pixabay-api-request.git
+git remote add origin https://github.com/PowerDigitalMedia/reacter.git
 git push -u origin dev
 
 
