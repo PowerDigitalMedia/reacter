@@ -54,7 +54,7 @@ update files
 
 ***
 git add .
-git commit -m "my changes" 
+git commit -m "prod changes" 
 git remote add origin https://github.com/PowerDigitalMedia/reacter.git
 git push -u origin master
 
