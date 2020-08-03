@@ -1,0 +1,1830 @@
+/*********************************
+
+*********************************/
+
+
+.dynamic-form {
+
+    background-color:white;
+    width:100%;
+	height:100%;
+	
+    align-items: center;
+	flex-direction: column;
+
+	position:relative;
+	float:left;
+	
+}
+
+
+
+.dynamic-form .logo {
+    margin-bottom: 12px;
+    height: 90px;
+    font-weight: bold;
+}
+
+
+.dynamic-form .header {
+
+
+    /*horizontal-align: center;*/
+
+    background-color:transparent;  
+
+    width:98%;
+    height:auto;
+    margin: 7px 0 7px 0;
+    padding:7px 0 7px 0;
+
+    font-size: 25px;
+    font-weight: 500;
+    text-align:left;
+	color:#1A1926;
+	
+ 
+}
+
+
+
+.dynamic-form .underlined {
+
+
+    /*horizontal-align: center;*/
+
+    background-color:transparent;  
+
+    width:100%;
+    height:auto;
+    margin: 7px 0 15px 0;
+    padding:0 0 4px 0;
+
+    font-size: 25px;
+    font-weight: 500;
+    text-align:left;
+	color:#1A1926;
+	
+	border-bottom:1px solid #1A1926;
+
+ 
+}
+
+
+
+
+.dynamic-form .notice {
+
+
+	/*horizontal-align: center;*/
+	
+	background-color:lightgoldenrodyellow;
+
+    width:100%;
+    height:auto;
+    margin: 10px 0 10px 0;
+    padding:10px 0 10px 0;
+
+    position:relative;
+    float:left;
+
+    font-size: 22px;
+    font-weight: 500;
+    text-align:center;
+	color:black;
+	
+	border:1px solid lightgray;
+
+
+ 
+}
+
+
+
+
+.dynamic-form .bar {
+
+    /*horizontal-align: center;*/
+
+
+    background-color:#454D5F;  
+
+    width:98%;
+    height:auto;
+    margin: 0 0 10px 0;
+    padding:12px 0 12px 10px;
+
+
+    position:relative;
+    float:left;
+
+    font-size: 20px;
+    font-weight: 500;
+    text-align:left;
+    color:white;
+
+
+	border:1px solid #454D5F;
+    /*border-radius:4px;*/
+
+
+}
+
+
+
+
+.dynamic-form .headline {
+
+    /*horizontal-align: center;*/
+
+
+	/* #F9F9F9  #EEF3F9   #EDEEF1  #EBECF1*/
+
+    background-color:#EDEEF1;  
+
+    width:98%;
+    height:auto;
+    margin: 18px 0 7px 0;
+    padding:10px 0 10px 10px;
+
+
+    position:relative;
+    float:left;
+
+    font-size: 18px;
+    font-weight: 500;
+    text-align:left;
+	color:black;
+
+
+	border:1px solid lightgray;
+  
+
+}
+
+
+
+.dynamic-form .badge {
+
+    /*horizontal-align: center;*/
+
+
+	/* #F9F9F9  #EEF3F9   #EDEEF1  #EBECF1*/
+
+    background-color:#EDEEF1;  
+
+    width:98%;
+    height:auto;
+    margin: 0 0 20px 0;
+    padding:10px 0 10px 10px;
+
+
+    position:relative;
+    float:left;
+
+    font-size: 18px;
+    font-weight: 500;
+    text-align:left;
+	color:black;
+
+
+	border:1px solid lightgray;
+  
+
+}
+
+
+
+
+
+/*************************************
+//input
+*************************************/
+
+.input-field {
+    margin-bottom: 25;
+}
+.input {
+    font-size: 18;
+    /*placeholder-color: #A8A8A8;*/
+}
+.input:disabled {
+    background-color: white;
+    opacity: 0.5;
+}
+
+
+
+.dynamic-form .spacer {
+
+
+    background-color:transparent;
+    width:100%;
+    height:20px;
+	margin:5px 0 5px 0;
+	padding:0 0 0 0;
+
+    position:relative;
+	float:left;
+	
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+//controller = horizontal btns
+
+
+
+
+
+****************************************
+***************************************/
+
+.dynamic-form .controller {
+
+    background-color:transparent;
+    width:100%;
+    height:50px;
+    margin:0 0 20px 0;
+    padding:0 0 0 0;
+
+    top:80%;
+    left:30%;
+}
+
+
+    .dynamic-form .controller .btn {
+
+        background-color:purple;  
+
+        width:110px;
+        height:auto;
+        margin: 0 0 0 0;
+        padding:10px 0 10px 0;
+
+        top:0;
+        left:5px;
+
+        font-size: 16px;
+        font-weight: 600;
+        text-align:center;
+        color:white;
+
+        border-radius:10px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+//clicker = radio or checkbox
+
+
+
+
+
+****************************************
+***************************************/
+
+.dynamic-form .clicker {
+
+    background-color:transparent;
+    width:100%;
+    height:40px;
+    margin:0 0 8px 0;
+    padding:0 0 0 0;
+
+    position:relative;
+    float:left;
+
+
+   
+}
+
+
+    .dynamic-form .clicker .btn {
+
+        background-color:purple;  
+
+        width:110px;
+        height:auto;
+        margin: 0 0 0 0;
+        padding:10px 0 10px 0;
+
+
+        position:absolute;
+        z-index:1;
+
+        top:0;
+        left:0;
+
+        font-size: 16px;
+        font-weight: 600;
+        text-align:center;
+        color:white;
+
+        border-radius:10px;
+
+
+    }
+
+
+
+
+    .dynamic-form .clicker .click-txt {
+
+        background-color:transparent;
+
+        width:auto;
+        height:50px;
+        margin: 0 0 0 0;
+        padding:10px 0 10px 0;
+
+
+        position:absolute;
+        z-index:2;
+
+        top:0;
+        left:60px;
+
+
+        font-size: 18px;
+        font-weight: 500;
+        text-align:left;
+        color:black;
+
+
+        /*border-radius:10;*/
+
+        cursor:pointer;
+
+
+     }
+
+
+
+     .dynamic-form .clicker .click-txtinp{
+    
+        
+        background-color:white;
+    
+        width:98%;
+        height:auto;
+        
+        padding:11px 0 11px 2%;
+        margin:0 0 0 0;
+        float:left;
+    
+    
+        font-family:Verdana, Geneva, sans-serif;
+        font-size:14px;
+        font-weight:normal;
+        color:#777;
+        text-align:left;
+        font-style:italic;
+    
+        border:0px solid #FFF;
+    
+    }
+
+ 
+ 
+ 
+ 
+     .dynamic-form .clicker .rad{
+ 
+         /*horizontal-align: left;*/
+ 
+         background-color:black;
+         width:26px;
+         height:26px;
+      
+         margin: 0 0 0 0;
+         padding:3px;
+
+
+         position:absolute;
+         z-index:1;
+ 
+         top:5px;
+         left:0;
+ 
+	
+         border-radius:30px;
+
+         cursor:pointer;
+
+
+     }
+ 
+     .dynamic-form .clicker .rad-inner {
+ 
+         background-color:white;
+         width:20px;
+         height:20px;
+         margin: 0 0 0 0;
+		 padding: 0 0 0 0;
+		 
+		 position:relative;
+		 float:left;
+ 
+         border-radius: 30px;
+ 
+         border-color: white;
+         border-width: 3px;
+         border-style: solid;
+
+
+
+ 
+ 
+     }
+ 
+
+
+
+     .dynamic-form .chk{
+
+        /*horizontal-align: left;*/
+ 
+        background-color:black;
+        width:26px;
+        height:26px;
+     
+        margin: 0 0 0 0;
+        padding:3px;
+
+
+
+        position:absolute;
+        z-index:1;
+
+        top:5px;
+		left:0;
+		
+
+		
+        cursor:pointer;
+
+     
+    }
+
+    .dynamic-form .chk-inner {
+
+        background-color:white;
+        width:20px;
+        height:20px;
+        margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		
+		position:relative;
+		float:left;
+
+
+        border-color: white;
+        border-width: 3px;
+        border-style: solid;
+
+    }
+
+
+
+
+
+
+
+
+/*************************************
+//btn-submit
+*************************************/
+
+.dynamic-form .btn-submit {
+  
+   
+    background-color:#07a2e3; 
+
+    width:100%;
+    height:auto;
+    margin: 15px 0 15px 0;
+    padding:12px 0 10px 0;
+
+    position:relative;
+    float:left;
+
+    font-size: 18px;
+    font-weight:500;
+    text-align:center;
+    color:white;
+
+    border-radius:7px;
+
+    cursor:pointer;
+
+
+}
+
+
+.dynamic-form .btn-submit:disabled {
+    opacity: 0.5;
+}
+
+
+
+
+
+/*************************************
+//btn label
+*************************************/
+
+.dynamic-form .btn-label {
+
+    background-color:transparent;
+    /*horizontal-align:center;*/
+    color: black;
+    font-size: 14px;
+    border-radius:10px;
+
+}
+
+
+
+
+/*************************************
+//btn link
+*************************************/
+
+.dynamic-form .btn-link {
+
+    background-color:transparent;  
+
+    width:auto;
+    height:auto;
+    margin: 15px 0 15px 0;
+    padding:3px 0 3px 0;
+
+    position:relative;
+    float:left;
+
+    font-size: 16px;
+    font-weight:500;
+    text-align:center;
+    color:blue;
+
+	border-bottom:1px solid blue;
+
+	cursor:pointer;
+	
+
+
+}
+
+
+
+
+
+
+
+
+
+/*************************************
+//grid
+*************************************/
+
+.dynamic-form .grid {
+
+
+	/*horizontal-align: center;*/
+
+
+	background-color:transparent;
+
+	width:100%;
+	height:auto;
+	margin: 0 0 0 0;
+	padding:0 0 0 0;
+
+	position:relative;
+	float:left;
+
+
+
+}
+
+
+
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+FORM
+
+
+
+
+
+****************************************
+***************************************
+
+.dynamic-form .form {
+
+    background-color:white;
+
+    width:60%;
+    height:auto;
+
+    margin-left:20%;
+    margin-right:20%;
+    flex-grow:2;
+    vertical-align:top;
+
+}
+
+
+
+
+    .dynamic-form .form .grid {
+
+
+        /*horizontal-align: center;*
+
+
+        background-color:transparent;
+ 
+        width:98%;
+        height:auto;
+        margin: 0 0 10px 0;
+        padding:10px 0 10px 10px;
+
+
+
+    }
+
+        .dynamic-form .form .grid .cell {
+
+            background-color:transparent;
+            margin: 0;
+            padding:60px 0px 60px 10px;
+
+        }
+
+
+****************************************/
+
+
+
+
+
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+FRM
+
+
+
+
+
+****************************************
+***************************************/
+
+.dynamic-form .frm {
+
+
+    background-color:transparent;
+
+    width:100%;
+    height:auto;
+    float:left;
+    margin:0 0 0 0;
+    padding:0 20px 0 0;
+    overflow:visible;
+    position:relative;
+
+}
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+INPUT
+
+
+
+
+
+****************************************
+***************************************/
+
+.dynamic-form .frm .input-wrap{
+
+    background-color:greenyellow;
+
+    width:100%;
+    height:auto;
+    padding:0 0 0 0;
+    margin:5px 0 5px 0;
+    float:left;
+    overflow:visible;
+
+    border:1px solid #000;
+    border-radius:3px;
+
+}
+
+    .dynamic-form .frm .input-wrap .input-tag{
+    
+        background-color:white;
+    
+        width:98%;
+        height:auto;
+        
+        padding:13px 0 13px 2%;
+        margin:0 0 0 0;
+        float:left;
+    
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size:14px;
+        font-weight:normal;
+        color:#000;
+        text-align:left;
+    
+        border:0px solid #FFF;
+    
+    
+    }
+    .dynamic-form .frm .input-wrap .input-tag-empty{
+    
+        
+        background-color:white;
+    
+        width:98%;
+        height:auto;
+        
+        padding:13px 0 13px 2%;
+        margin:0 0 0 0;
+        float:left;
+    
+    
+        font-family:Verdana, Geneva, sans-serif;
+        font-size:14px;
+        font-weight:normal;
+        color:#777;
+        text-align:left;
+        font-style:italic;
+    
+        border:0px solid #FFF;
+    
+    }
+
+
+
+
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+INPUT READONLY
+
+
+
+
+
+****************************************
+***************************************/
+
+
+.dynamic-form .frm .input-wrap-readonly{
+
+	
+	background-color:#EEF3F9;/*  #EBECF1  #F9F9F9     */
+
+	width:100%;
+	height:auto;
+	padding:0 0 0 0;
+	margin:5px 0 5px 0;
+	float:left;
+	overflow:visible;
+
+	border:1px solid #000;
+	border-radius:3px;
+
+	cursor:default;
+
+}
+	.dynamic-form .frm .input-wrap-readonly .input-tag{
+	
+		background-color:#EEF3F9;
+	
+		width:98%;
+		height:auto;
+		
+		padding:13px 0 13px 2%;
+		margin:0 0 0 0;
+		float:left;
+	
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		color:#000;
+		text-align:left;
+	
+		border:1px solid #EEF3F9;
+	
+		cursor:default;
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+TEXT AREA
+
+
+
+
+
+****************************************
+***************************************/
+
+
+.dynamic-form .frm .ta-wrap{
+
+
+	width:100%;
+	height:auto;
+	padding:0;
+	margin:5px 0 5px 0; 
+	float:left;
+	overflow:hidden;
+
+	border:1px solid #000;
+	border-radius:3px;
+
+
+	
+}
+
+
+	.dynamic-form .frm .ta-wrap .ta-tag{
+	
+	
+		background-color: #FFF;
+	
+	
+		width:98%;
+		height:100px;
+		padding:3px 0 0 2%;
+		margin:0 0 3px 0;
+		float:left;
+		
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:13px;
+		font-weight:normal;
+		color:#000;
+		text-align:left;
+		
+		font-style:normal;
+	
+	
+		border:0px solid #000;
+		border-radius:3px;
+
+
+		resize: none;
+
+	
+	
+	}
+	.dynamic-form .frm .ta-wrap .ta-tag-empty{
+	
+		
+		background-color: #FFF;
+	
+		width:98%;
+		height:100px;
+		padding:3px 0 0 2%;
+		margin:0 0 3px 0;
+		float:left;
+	
+	
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		color:#777;
+		text-align:left;
+	
+		font-style:italic;
+
+		border:0px solid #000;
+		border-radius:3px;
+
+
+		resize: none;
+
+
+	
+	}
+	.dynamic-form .frm .ta-wrap .character-countdown{
+	
+	
+		width:318px;
+		height:25px;
+		padding:0 0 0 0;
+		margin:0 0 0 7px; 
+		float:left;
+		
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:10px;
+		font-weight:normal;
+		color:#FFF;
+		text-align:left;
+	}
+	.dynamic-form .frm .ta-wrap .character-countdown .input-tag{
+	
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:11px;
+		font-weight:bold;
+		color:#000;
+		text-align:center;
+	}
+	
+	
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+INPUT ( HALF )
+
+
+
+
+
+****************************************
+***************************************/
+
+
+.dynamic-form .frm .half{
+
+	
+	background-color:transparent;
+
+	width:100%;
+	height:auto;
+	padding:0 0 0 0;
+	margin:5px 0 5px 0;
+	float:left;
+	overflow:visible;
+	position:relative;
+
+
+}
+
+.dynamic-form .frm .half .input-wrap-half{
+
+
+	background-color:white;
+
+	width:40%;
+	height:auto;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	float:left;
+	overflow:visible;
+
+	border:1px solid #000;
+	border-radius:3px;
+
+}
+	.dynamic-form .frm .half .input-wrap-half .input-tag{
+	
+		background-color:white;
+	
+		width:98%;
+		height:auto;
+		
+		padding:12px 0 12px 2%;
+		margin:0 0 0 0;
+		float:left;
+	
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		color:#000;
+		text-align:left;
+	
+		border:0px solid #FFF;
+	
+	
+	
+	}
+	.dynamic-form .frm .half .input-wrap-half .input-tag-empty{
+	
+		
+		background-color:white;
+	
+		width:98%;
+		height:auto;
+		padding:12px 0 12px 2%;
+		margin:0 0 0 0;
+		float:left;
+	
+	
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		color:#777;
+		text-align:left;
+		font-style:italic;
+	
+		border:0px solid #FFF;
+	
+	}
+	
+
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+INPUT ( small )
+
+
+
+
+
+****************************************
+***************************************/
+
+
+.dynamic-form .frm .small{
+
+	
+	background-color:transparent;
+
+	width:100%;
+	height:auto;
+	padding:0 0 0 0;
+	margin:5px 0 5px 0;
+	float:left;
+	overflow:visible;
+	position:relative;
+
+
+}
+
+	.dynamic-form .frm .small .input-wrap-small{
+	
+		
+		background-color:white;
+	
+		width:100px;
+		height:auto;
+		padding:0 0 0 0;
+		margin:0 0 0 0;
+		float:left;
+		overflow:visible;
+	
+		border:1px solid #000;
+		border-radius:3px;
+	
+	}
+		.dynamic-form .frm .small .input-wrap-small .input-tag{
+		
+			background-color:white;
+		
+			width:98%;
+			height:auto;
+			
+			padding:12px 0 12px 0;
+			margin:0 0 0 0;
+			float:left;
+		
+			font-family:Verdana, Arial, Helvetica, sans-serif;
+			font-size:14px;
+			font-weight:normal;
+			color:#000;
+			text-align:center;
+		
+			border:1px solid #FFF;
+			border-radius:4px;
+		
+		}
+		.dynamic-form .frm .small .input-wrap-small .input-tag-empty{
+		
+			
+			background-color:white;
+		
+			width:98%;
+			height:auto;
+			padding:12px 0 12px 0;
+			margin:0 0 0 0;
+			float:left;
+		
+		
+			font-family:Verdana, Geneva, sans-serif;
+			font-size:14px;
+			font-weight:normal;
+			color:#777;
+			text-align:center;
+			font-style:italic;
+		
+			border:1px solid #FFF;
+			border-radius:3px;
+
+		
+		}
+		/************************
+		A-WRAP
+		************************/
+		
+		.dynamic-form .frm .small .a-wrap{
+			
+			width:100px;
+			height:15px;
+			
+			margin:14px 0 0 10px;
+			float:left;
+			
+			font-family:Tahoma, Geneva, sans-serif;
+			font-size:13px;
+			font-weight: bold;
+			text-align:left;
+			color:#000;
+		}
+		.dynamic-form .frm .small .a-wrap a.a-tag:link { color:blue; text-decoration:underline;}
+		.dynamic-form .frm .small .a-wrap a.a-tag:active { color:blue; text-decoration:underline;}
+		.dynamic-form .frm .small .a-wrap a.a-tag:visited { color:blue; text-decoration:underline;}
+		.dynamic-form .frm .small .a-wrap a.a-tag:hover { color:red; text-decoration: underline;}
+			
+	
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+INPUT ( PHONE )
+
+
+
+
+
+****************************************
+***************************************/
+
+.dynamic-form .frm .phone{
+
+	
+	background-color:transparent;
+
+	width:100%;
+	height:auto;
+	padding:0 0 0 0;
+	margin:5px 0 5px 0;
+	float:left;
+	overflow:visible;
+	position:relative;
+
+
+}
+/*********************
+3 DIGIT
+*********************/
+
+.dynamic-form .frm .phone .input-wrap-3digit{
+
+	
+	background-color:transparent;
+
+	width:15%;
+	height:auto;
+	padding:0 0 0 0;
+	margin:0 5px 0 0;
+	float:left;
+	overflow:visible;
+
+	border:1px solid #000;
+	border-radius:3px;
+
+}
+	.dynamic-form .frm .phone .input-wrap-3digit .input-tag{
+	
+		background-color:white;
+	
+		width:100%;
+		height:auto;
+		
+		padding:12px 0 12px 0;
+		margin:0 0 0 0;
+		float:left;
+	
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		color:#000;
+		text-align:center;
+	
+		border:0px solid #FFF;
+	
+	
+	
+	}
+	.dynamic-form .frm .phone .input-wrap-3digit .input-tag-empty{
+	
+		
+		background-color:white;
+	
+		width:100%;
+		height:auto;
+		padding:12px 0 12px 0;
+		margin:0 0 0 0;
+		float:left;
+	
+	
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		color:#777;
+		text-align:center;
+		font-style:italic;
+	
+		border:0px solid #FFF;
+	
+	}
+
+
+
+/**********************
+4 DIGIT
+**********************/
+
+.dynamic-form .frm .phone .input-wrap-4digit{
+
+	
+	background-color:transparent;
+
+	width:20%;
+	height:auto;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	float:left;
+	overflow:visible;
+
+	border:1px solid #000;
+	border-radius:3px;
+
+}
+	.dynamic-form .frm .phone .input-wrap-4digit .input-tag{
+	
+		background-color:white;
+	
+		width:100%;
+		height:auto;
+		
+		padding:12px 0 12px 0;
+		margin:0 0 0 0;
+		float:left;
+	
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		color:#000;
+		text-align:center;
+	
+		border:0px solid #FFF;
+	
+	
+	
+	}
+	.dynamic-form .frm .phone .input-wrap-4digit .input-tag-empty{
+	
+		
+		background-color:white;
+	
+		width:100%;
+		height:auto;
+		padding:12px 0 12px 0;
+		margin:0 0 0 0;
+		float:left;
+	
+	
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		color:#777;
+		text-align:center;
+		font-style:italic;
+	
+		border:0px solid #FFF;
+	
+	}
+
+/***************************************
+****************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+CHOICE DROPDOWNS
+
+
+
+
+
+****************************************
+***************************************/
+
+
+.dynamic-form .frm .sel-wrap{
+
+
+ 	background-color:white;
+
+	width:100%;
+ 	height:auto;
+	margin:5px 4px 5px 0;
+	padding:0 0 0 0;
+	float:left;
+	overflow:visible;
+
+	border:1px solid black;
+	border-radius:3px;
+
+}
+
+	.dynamic-form .frm .sel-wrap .sel{
+	
+	
+		background-color:white;
+	
+		width:100%;
+		height:84%;
+		margin:0 0 0 0;
+		padding:10px 1% 10px 1%;
+		float:left;
+
+		border:0px solid white;
+			
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		color:#777;
+		text-align:left;
+		font-style:italic;
+
+	
+	
+	}
+
+		.dynamic-form .frm .sel-wrap .sel .opt{
+		
+		
+			background-color:white;
+		
+			width:100%;
+			height:auto;
+			float:left;
+			margin:0 0 0 0;
+			padding:5px 0 5px 3px;
+		
+			font-family:Verdana, Geneva, sans-serif;
+			font-size:14px;
+			font-weight:normal;
+			font-style:normal;
+			color:#000;
+			text-align:left;
+		
+		}
+
+	
+	
+
+.dynamic-form .frm .date{
+
+	
+	background-color:transparent;
+
+	width:100%;
+	height:auto;
+	padding:0 0 0 0;
+	margin:5px 0 5px 0;
+	float:left;
+	overflow:visible;
+	position:relative;
+
+
+}	
+
+	.dynamic-form .frm .date .sel{
+
+		
+		background-color:transparent;
+
+		width:100%;
+		height:84%;
+		margin:0 0 0 0;
+		padding:10px 1% 10px 1%;
+		float:left;
+
+		border:0px solid white;
+			
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		color:#777;
+		text-align:left;
+		font-style:italic;
+		
+	}
+
+		.dynamic-form .frm .date .sel .opt{
+		
+		
+			background-color:white;
+		
+			width:100%;
+			height:auto;
+			float:left;
+			margin:0 0 0 0;
+			padding:5px 0 5px 3px;
+		
+			font-family:Verdana, Geneva, sans-serif;
+			font-size:14px;
+			font-weight:normal;
+			font-style:normal;
+			color:#000;
+			text-align:left;
+		
+			
+		
+		
+		}
+
+
+	.dynamic-form .frm .date .wrap-month{
+			
+		
+		background-color:white;
+		
+		width:110px;
+		height:auto;
+		margin:0 4px 0 0;
+		padding:0 0 0 0;
+		float:left;
+	
+		border:1px solid black;
+		border-radius:3px;
+				
+
+			
+	}
+	.dynamic-form .frm .date .wrap-day{
+			
+		
+		background-color:white;
+		
+		width:62px;
+		height:auto;
+		margin:0 4px 0 0;
+		padding:0 0 0 0;
+		float:left;
+	
+		border:1px solid black;
+		border-radius:3px;
+				
+
+			
+	}
+	.dynamic-form .frm .date .wrap-year{
+			
+		
+		background-color:white;
+		
+
+		width:75px;
+		height:auto;
+		margin:0 0 0 0;
+		padding:0 0 0 0;
+		float:left;
+	
+		border:1px solid black;
+		border-radius:3px;
+						
+	}
+
+
+
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+INPUT MESSAGE
+
+
+
+
+
+****************************************
+#7FD71B;
+***************************************/
+
+
+.dynamic-form .frm .inpmsg{
+
+	background-color:white;
+
+	width:auto;
+	height:auto;
+	
+	padding:12px 0 12px 12px;
+	margin:0 0 0 0;
+	float:left;
+
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:normal;
+	color:#000;
+	text-align:center;
+
+	border:0px solid #FFF;
+
+
+
+}
+
+
+
+
+
+
+
+/***************************************
+****************************************
+
+
+
+
+
+CAPTCHA
+
+
+
+
+
+****************************************
+#7FD71B;
+***************************************/
+
+
+.dynamic-form .captcha{
+	
+	background-color:transparent;
+	width:98%;
+	height:auto;
+	float:left;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+
+}
+
+
+	.dynamic-form .captcha .input-wrap{
+
+			background-color:white;
+
+			width:100%;
+			height:auto;
+			padding:0 0 0 0;
+			margin:5px 0 5px 0;
+			float:left;
+			overflow:visible;
+
+			border:1px solid #000;
+			border-radius:3px;
+
+		}
+
+		.dynamic-form .captcha .input-wrap .input-tag{
+			
+				background-color:white;
+			
+				width:98%;
+				height:auto;
+				
+				padding:13px 1% 13px 1%;
+				margin:0 0 0 0;
+				float:left;
+			
+				font-family:Verdana, Arial, Helvetica, sans-serif;
+				font-size:14px;
+				font-weight:normal;
+				color:#000;
+				text-align:center;
+			
+				border:0px solid #FFF;
+			
+			
+			}
+			.dynamic-form .captcha .input-wrap .input-tag-empty{
+			
+				
+				background-color:white;
+			
+				width:98%;
+				height:auto;
+				
+				padding:13px 1% 13px 1%;
+				margin:0 0 0 0;
+				float:left;
+			
+			
+				font-family:Verdana, Geneva, sans-serif;
+				font-size:14px;
+				font-weight:normal;
+				color:#777;
+				text-align:center;
+				font-style:italic;
+			
+				border:0px solid #FFF;
+			
+			}
+
+
+
+
+
+
+
+
+	.dynamic-form .captcha .box{
+	
+		background-color:#7FD71B;
+		width:98%;
+		height:auto;
+		float:left;
+		margin:0 0 0 0;
+		padding:0 0 0 0;
+	
+	}
+
+
+	.dynamic-form .captcha .capdiv{
+	
+		background-color:transparent;
+		width:98%;
+		height:auto;
+		float:left;
+		margin:0 0 0 0;
+		padding:0 0 0 0;
+	
+	}
+
+
+	.dynamic-form .captcha .capbtn{
+	
+		background-color:#454D5F;
+		width:98%;
+		height:auto;
+		float:left;
+		margin:0 0 0 0;
+		padding:0 0 0 0;
+
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:normal;
+		color:#FFF;
+		text-align:center;
+
+
+		border:1px solid black;
+		border-radius:4px;
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+

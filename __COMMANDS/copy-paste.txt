@@ -1,0 +1,68 @@
+
+***
+cd ~/Work/PROJEX/github/repos/pixabay-api-request
+
+
+
+***
+git --version
+
+
+***
+git status
+
+
+
+
+--------------------------------------------------
+create a new repository on the command line
+--------------------------------------------------
+
+echo "# pixabay-api-request" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/PowerDigitalMedia/pixabay-api-request.git
+git push -u origin master
+
+
+
+
+-------------------------------------------------
+view and switch branches
+-------------------------------------------------
+
+*** 
+git branch
+
+*** 
+git branch -a
+
+
+***
+git checkout -b dev
+
+
+
+
+
+
+
+--------------------------------------------------
+update files
+--------------------------------------------------
+
+***
+git add .
+git commit -m "prod changes" 
+git remote add origin https://github.com/PowerDigitalMedia/pixabay-api-request.git
+git push -u origin master
+
+
+***
+git add .
+git commit -m "dev changes" 
+git remote add origin https://github.com/PowerDigitalMedia/pixabay-api-request.git
+git push -u origin dev
+
+

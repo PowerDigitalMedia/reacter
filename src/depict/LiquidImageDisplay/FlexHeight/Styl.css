@@ -1,0 +1,148 @@
+
+/*
+https://alligator.io/react/react-css/
+*/
+
+
+.liquid-grid {
+
+    background-color:transparent;
+
+    width   :100%;
+    height  :auto;
+
+    padding :0 0 0 0; 
+    margin  :0 0 0 0;
+
+    position:relative;   
+    float:left;
+
+}
+
+
+.liquid-column {
+
+    background-color:transparent;
+
+    width   :48%;
+    height  :auto;
+
+    padding :0 0 50px 0; 
+    margin  :0 0 0 0;
+
+    position:relative;   
+    float:left;
+
+    display : block;
+
+    overflow:hidden;
+
+    /*border:1px solid white;*/
+
+
+}
+
+
+
+
+
+.liquid-cell {
+
+    background-color:white;
+
+    width   :48%;
+    height  :auto;
+
+    padding :0 0 0 0; 
+    margin  :0 0 10px 0;
+
+    position:relative;   
+    float:left;
+
+    display : block;
+
+    overflow:hidden;
+
+    /*border:1px solid lightgray;*/
+
+
+    cursor:pointer;
+}
+
+
+
+.liquid-cell-thumb {
+
+    background-color:black;
+
+    width   :98%;
+    height  :55%;
+
+    padding :0 0 0 0; 
+    margin  :0 0 0 1%;
+
+    position:relative;   
+    float:left;
+
+    display : block;
+
+    overflow:hidden;
+}
+
+
+
+.liquid-cell-title {
+
+    color: #454D5F;
+    font-size:24px;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+        font-size: 1.5rem;
+    }
+}
+
+.liquid-cell-text {
+
+    padding:10px 15px 20px 15px;
+    color: #000;
+    font-size:16px;
+
+    @media (min-width: 1024px) {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+
+
+/*********************************************************
+**********************************************************
+*********************************************************/
+
+.liquid-flyr {
+
+
+    background-color:white;
+
+    width   :100%;
+    height  :auto;
+
+    padding :0 0 0 0; 
+    margin  :0 0 0 0;
+
+    position:absolute;   
+    z-index:3;
+    top:0;
+    left:0;
+
+
+}
+
+
+
+
+
