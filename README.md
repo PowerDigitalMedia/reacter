@@ -2,7 +2,6 @@
 
 ### Reacter
 
-Reacter is Quick Start reference for a web app
 
 ## Highligts
 
