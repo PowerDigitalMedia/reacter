@@ -9,7 +9,7 @@ React quick start for creating projects.
 
 
 
-## Highligts
+## Highlights
 
 * Site Navigation using react-router-dom
 * Hooks for Liquid/Fluid Sizing
