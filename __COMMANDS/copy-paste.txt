@@ -1,0 +1,75 @@
+
+***
+cd ~/Work/PROJEX/github/repos/reacter
+
+
+
+***
+git --version
+
+
+***
+git status
+
+
+
+
+--------------------------------------------------
+create a new repository on the command line
+--------------------------------------------------
+
+echo "# reacter" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/PowerDigitalMedia/reacter.git
+git push -u origin master
+
+
+
+
+-------------------------------------------------
+view and switch branches
+-------------------------------------------------
+
+*** 
+git branch
+
+*** 
+git branch -a
+
+
+***
+git checkout -b dev
+
+
+
+*** 
+git checkout master
+
+***
+git checkout dev
+
+
+
+
+
+
+--------------------------------------------------
+update files
+--------------------------------------------------
+
+***
+git add .
+git commit -m "prod changes" 
+git remote add origin https://github.com/PowerDigitalMedia/reacter.git
+git push -u origin master
+
+
+***
+git add .
+git commit -m "dev changes" 
+git remote add origin https://github.com/PowerDigitalMedia/reacter.git
+git push -u origin dev
+
+

@@ -1,13 +1,22 @@
 
 
-### Reacter
+# Reacter
+
+
+## Description
+
+React quick start for creating projects. 
+
 
 
 ## Highligts
 
-- Site Navigation using react-router-dom
--  Hooks for Liquid/Fluid Sizing
-- Dynamic Form Creation and Submission
+* Site Navigation using react-router-dom
+* Hooks for Liquid/Fluid Sizing
+* Dynamic Form Creation and Submission
+
+
+
 
 
 
