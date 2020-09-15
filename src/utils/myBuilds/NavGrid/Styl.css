@@ -1,0 +1,150 @@
+
+
+.area .grid{
+								
+	background-color:transparent;
+	width:auto;
+	height:auto;
+
+	padding:0 0 100px 0;
+	margin:20px auto;
+
+	position:relative;
+	/*float:left;*/
+	overflow:hidden;
+
+}
+
+
+	.area .grid .row{
+									
+		background-color:transparent;
+		width:auto;
+		height:auto;
+
+		padding:0 0 0 0;
+		margin:0 0 0 0;
+
+		position:relative;
+		float:left;
+		overflow:hidden;
+
+	}
+
+
+
+
+
+	.area .grid .iconbox{
+										
+		background-color:#F9F9F9;
+		width:350px;
+		height:300px;
+
+		padding:0 0 0 0;
+		margin:7px 7px 7px 7px;
+
+		position:relative;
+		float:left;
+		overflow:hidden;
+
+
+		border:1px solid lightgray;
+		border-radius: 20px;
+
+	}
+
+
+
+		.area .grid .iconbox .icon{
+											
+			background-color:transparent;
+			width:80px;
+			height:80px;
+
+			padding:0 0 0 0;
+			margin:30px auto;
+
+			position:relative;
+			/*float:left;*/
+			overflow:visible;
+
+			border:1px solid #1A1926;
+
+
+		}
+
+
+		.area .grid .iconbox .title{
+											
+			background-color:transparent;
+			width:90%;
+			height:auto;
+			padding:4px 0 4px 0;
+			margin:0 0 0 5%;
+
+			position:relative;
+			float:left;
+			overflow:hidden;
+
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:22px;
+			font-weight:bold;
+			color:#000;
+			text-align:center;
+
+		}
+
+
+
+
+		.area .grid .iconbox .descr{
+											
+			background-color:transparent;
+			width:90%;
+			height:auto;
+			padding:4px 0 4px 0;
+			margin:0 0 0 5%;
+
+			position:relative;
+			float:left;
+			overflow:hidden;
+
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:18px;
+			font-weight:normal;
+			color:#000;
+			text-align:center;
+
+		}
+
+
+		.area .grid .iconbox .button{
+											
+			background-color:transparent;
+			width:90%;
+			height:auto;
+			padding:10px 0 10px 5%;
+			margin:20px 0 0 0;
+
+			position:relative;
+			float:left;
+			overflow:hidden;
+
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:20px;
+			font-weight:normal;
+			color:#FFF;
+			text-align:center;
+
+			text-decoration:underline;
+
+
+			border-radius:5px;
+
+		}
+
+
+
+
+

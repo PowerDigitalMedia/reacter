@@ -6,19 +6,26 @@ import {
     //Switch,
     //Route
     //Link
-  } from "react-router-dom";
+} from "react-router-dom";
+
+
+//https://muffinman.io/react-router-subfolder-on-server/
   
 
-import Depict from "./depict/index.js";
+import Stage from "./app-components/stage";
 
 
 const App = () => (
 
     <WindowDimensionsProvider>
 
-        <Router>
+        <Router
+            
+            basename='/x-reacter/'
+        
+        >
 
-            <div><Depict /></div>
+            <div><Stage /></div>
 
         </Router>
 

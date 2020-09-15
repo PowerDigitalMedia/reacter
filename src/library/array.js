@@ -15,9 +15,9 @@ export const arraylib = {
 
 
 		var type;
-		if(Object.prototype.toString.call(needle) == "[object String]") type = 'string';
-		if(Object.prototype.toString.call(needle) == "[object Array]") type = 'array';
-		if(Object.prototype.toString.call(needle) == "[object Object]") type = 'object';
+		if(Object.prototype.toString.call(needle) === "[object String]") type = 'string';
+		if(Object.prototype.toString.call(needle) === "[object Array]") type = 'array';
+		if(Object.prototype.toString.call(needle) === "[object Object]") type = 'object';
 
 
 
@@ -25,61 +25,68 @@ export const arraylib = {
 
 
 
+		var ret;
+		var i;
+
+
 
 		switch(type)
 		{
 		case'string':
 
-				var i;
-				for(i=0; i < haystack.length; i++)
+			
+			for(i=0; i < haystack.length; i++)
+			{
+				if(haystack[i] === needle)
 				{
-					if(haystack[i] == needle)
-					{
-						return true;
-					}
+					ret = true;
 				}
-				return false;
+			}
+			ret =  false;
 	
 		break;
 		case'array':
 
 
-			if(needle.length != haystack.length) return false;
+			if(needle.length !== haystack.length) ret = false;
 
-			var loop = haystack.length;
-			for(var i=0; i < loop; i++) 
+		
+			for(i=0; i < haystack.length; i++) 
 			{
-				if(needle[i] != haystack[i]) return false;
+				if(needle[i] !== haystack[i]) ret = false;
 			}
-			return true;
+			ret = true;
 
 
 		break;
 		case'object':
 
 
-			var loop = haystack.length;
-			for(var i=0; i < loop; i++) 
+			for(i=0; i < haystack.length; i++) 
 			{
 				var hayobj = haystack[i];
-				if(Object.prototype.toString.call(hayobj) != "[object Object]") return false;
+				if(Object.prototype.toString.call(hayobj) !== "[object Object]") ret = false;
 	
-
-
 				var jneedle = JSON.stringify(needle);
 				var jhay = JSON.stringify(hayobj);
 			
-				if(jneedle == jhay) return true;
+				if(jneedle === jhay) ret = true;
 
-				return false;
+				ret = false;
 
 			}
 
 
 		break;
+		default:
+
+			ret = false;
+		break;
 		}//switch
 
 
+
+		return ret;
 
 	},
 
@@ -94,7 +101,7 @@ export const arraylib = {
 
 
 
-		if(Object.prototype.toString.call(array) == "[object Array]"
+		if(Object.prototype.toString.call(array) === "[object Array]"
 		)
 		{
 			var counter = array.length;
@@ -114,7 +121,7 @@ export const arraylib = {
 			}
 
 		}//if
-		//===
+		//====
 
 		return array;
 
@@ -278,7 +285,7 @@ export const arraylib = {
   
 
 }//module
-//=======
+//==========
 
 
 
