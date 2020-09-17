@@ -24,46 +24,26 @@ import {
 
 
 
+// --  library --
 
-
-//-------------------------------------
-//library
-//-------------------------------------
-
-//import { arraylib } from './library/array';
 import { baselib } from './library/base';
-//import { elemlib } from './library/elem';
-//import { formlib } from './library/form';
-//import { stringlib } from './library/string';
 
 
 
-//-------------------------------------
-//hooks
-//-------------------------------------
+// -- hooks --
 
 import { useBrowserStore } from './utils/myHooks/BrowserStore';
 
 
 
+// -- tags --
 
-//-------------------------------------
-//tags
-//-------------------------------------
-
-import Header from "./components/header";
-import Navigation from "./components/navigation";
-import Subnav from "./components/subnav";
-import Depict from "./depict";
+import HeaderNav from "../universal/HeaderNav";
+import SubNav from "../universal/SubNav";
+import Zone from "../zone";
 
 
 
-
-
-
-
-//###################################################################
-//###################################################################
 
 
 const Stage = () => {
@@ -79,7 +59,7 @@ const Stage = () => {
 
     const refA = useRef(null)
     const refB = useRef(null)
-    const refC = useRef(null)
+    
 
 
     //==================================================
@@ -99,8 +79,7 @@ const Stage = () => {
 
     };
 
-    //-------------------------------------------
-
+  
     let subnavH = "0px";
 
     let subnavObj = {};
@@ -283,42 +262,50 @@ const Stage = () => {
                 ref={refA}
                 >
 
-                    <Header />
-
-                </div>
-
-
-                <div 
-                ref={refB} 
-                style={{
-
-                    height : navbarH
-                }}
-
-                >
-
-                    <Navigation navbarH={navbarH} navbtnObj={navbtnObj} />
+                    <HeaderNav />
 
                 </div>
 
 
 
-                <div 
-                ref={refC} 
-                style={{
+                {
+                //------------------------------------
+                // 
+                //------------------------------------
+                //location.pathname.match(RegExp("liquid",'gi'))
+                hasSubNav === 1
+                ? 
 
-                    height : subnavH
-                }}
+        
+                    <div 
+                    ref={refB}
+                    >
 
-                >
-                    <Subnav 
+                        <SubNav />
 
-                        subnavH={subnavH} 
-                        subnavObj={subnavObj} 
+                    </div>
 
-                    />
 
-                </div>
+                //------------------------------------
+                //
+                //------------------------------------
+                :
+
+                    <div 
+                    ref={refB}
+                    style={{
+
+                        height:"1px"
+
+                    }}
+                    >
+
+                    </div>
+
+                }
+
+
+
 
 
 
@@ -352,71 +339,62 @@ const Stage = () => {
 
             <div className="App-stage">
 
+
                 <div 
                 ref={refA}
                 >
 
-                    <Header 
-                        //zoneObj={zoneObj}
-                    />
+                    <HeaderNav />
 
                 </div>
 
 
-                <div 
-                ref={refB} 
-                style={{
 
-                    height : navbarH
-                }}
-
-                >
-
-                    <Navigation 
-
-                        //zoneObj={zoneObj}
-
-                        navbarH={navbarH} 
-                        navbtnObj={navbtnObj} 
-
-                    />
-
-                </div>
-
+                {
+                //------------------------------------
+                // 
+                //------------------------------------
+                //location.pathname.match(RegExp("liquid",'gi'))
+                hasSubNav === 1
+                ? 
 
         
+                    <div 
+                    ref={refB}
+                    >
 
-                <div 
-                ref={refC} 
-                style={{
+                        <SubNav />
 
-                    height : subnavH
-                }}
-
-                >
-                    <Subnav 
-
-                        subnavH={subnavH} 
-                        subnavObj={subnavObj} 
-
-                    />
-
-                </div>
+                    </div>
 
 
+                //------------------------------------
+                //
+                //------------------------------------
+                :
+
+                    <div 
+                    ref={refB}
+                    style={{
+
+                        height:"1px"
+
+                    }}
+                    >
+
+                    </div>
+
+                }
 
                 <div>
-                    <Depict 
 
-                        //zoneObj={zoneObj}
-
-                        stageTopHeight={stageTopHeight} 
-
-                    />
+                    <Zone stageTopHeight={stageTopHeight} />
 
                 </div>
 
+
             </div>
+
 
 
         )
@@ -432,27 +410,3 @@ const Stage = () => {
 export default Stage
 
 
-
-
-/*
-
-
-    <div 
-    ref={refA}
-    >
-    </div>
-
-
-    <div 
-    ref={refB} 
-    style={{
-
-        height : "0px"
-    }}
-
-    >
-    </div>
-
-
-
-*/

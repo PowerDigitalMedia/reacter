@@ -18,10 +18,6 @@ import { useLiquidImageGrid } from '../../../utils/myHooks/LiquidFormula/ImageGr
 
 
 
-//######################################################################
-//######################################################################
-//######################################################################
-
 const Flyr = ({
 
     width,//window
@@ -30,24 +26,6 @@ const Flyr = ({
     func
 
 }) => {
-
-
-   
-
-   
-    /*
-    alert(''
-        +'WINDOW W: '+width
-        +'\nBOX: '+JSON.stringify(box,null,2)
-    );
-    */
-
-
-    //console.log("FLYR DATA: "+JSON.stringify(box,null,2));
-
-
-    //################################################################
-    //################################################################
 
 
     const gridCall = "grid_cell";//grid_column_cell or grid_cell
@@ -70,7 +48,6 @@ const Flyr = ({
 
     }//==
 
-
     const stuff = useLiquidImageGrid(
 
         [box],
@@ -82,20 +59,9 @@ const Flyr = ({
         maxWidth
 
     );
-
-
-
-
-
-
- 
     
-    //##########################################################
-    //##########################################################
-
 
     //----------------------------------------------
-
     const [baseScrollHeight, setBaseScrollHeight] = useState(0)
     const [tabHeight, setTabHeight] = useState(0)
     const [flyrHeight, setFlyrHeight] = useState(0)
@@ -111,8 +77,10 @@ const Flyr = ({
         setFlyrHeight(flyrRef.current.offsetHeight)
 
     },[])
-
     //----------------------------------------------
+
+
+
 
 
 
@@ -270,9 +238,6 @@ const Flyr = ({
 
     //################################################################
     //################################################################
-
-
-
 
     return (
 
@@ -460,88 +425,4 @@ const Flyr = ({
 
 
 export default Flyr;
-
-
-
-
-
-/*
-
-  
-            <div 
-            className="liquid-grid" 
-            style={{
-
-                //backgroundColor : stuff.grid.bgColor, 
-                width           : stuff.grid.width,
-                height          : stuff.grid.height, 
-                margin          : stuff.grid.margin
-
-            }}
-
-            >
-
-                {stuff.data.map((box, i) => (
-
-                    <div 
-                    key={box.id} 
-                    className="liquid-cell"  
-                    style={{
-
-                        //backgroundColor : box.bgColor, 
-                        width           : stuff.cell.width,
-                        height          : stuff.cell.height,
-                        margin          : stuff.cell.margin,
-                        border          : stuff.cell.border
-                
-            
-                    }}
-            
-                    >
-
-
-                        <div 
-                        key={box.id} 
-                        className="liquid-cell-thumb"  
-                        style={{
-
-                            width           : stuff.cell.thumb.width,
-                            height          : box.thumb.h,
-                            margin          : stuff.cell.thumb.margin
-                
-                        }}
-                
-                        >
-
-
-                            <img
-                                style={{
-
-                                    marginTop: box.image.top, 
-                                    marginLeft:box.image.left
-
-                                }}
-
-                                src={window.location.origin + box.image.src} 
-                                width={box.image.w}
-                                height={box.image.h} 
-                                alt='noimage'
-
-                            />
-
-                    
-                        </div>
-
-
-                        <div className="liquid-cell-title">{box.title}</div>
-                        <div className="liquid-cell-text">{box.text}</div>
-
-                    </div>
-                ))}
-
-
-            </div>
-
-
-*/
 

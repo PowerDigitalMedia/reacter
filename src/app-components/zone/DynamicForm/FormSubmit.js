@@ -8,28 +8,16 @@ import React, {
 } from 'react';
 
 
-
 import '../../../app-style/alfabase.css';//alfa,base,tab,tab-x,flank
 import '../../../app-style/loader.css';//alfa,base,tab,tab-x,flank
 import './FormSubmitStyl.css';
 
 
-//import { arraylib } from '../../../library/array';
-//import { baselib } from '../../../library/base';
-//import { elemlib } from '../../../library/elem';
 import { formlib } from '../../../library/form';
-//import { stringlib } from '../../../library/string';
-
 
 
 import { Timeout } from './Timeout';
 
-
-
-
-//######################################################################
-//######################################################################
-//######################################################################
 
 const FormSubmit = ({
 
@@ -44,8 +32,6 @@ const FormSubmit = ({
 
 
 
-    //##########################################################
-    //##########################################################
 
     /*
 
@@ -65,17 +51,10 @@ const FormSubmit = ({
 
 
 
-    //##########################################################
-    //##########################################################
 
     //----------------------------------------------
-
-    //const [baseScrollHeight, setBaseScrollHeight] = useState(0)
-    //const [tabHeight, setTabHeight] = useState(0)
     const [flyrHeight, setFlyrHeight] = useState(0)
 
-    //const baseRef = useRef(null)
-    //const tabRef = useRef(null)
     const flyrRef = useRef(null)
 
     const [error, setError] = useState(null);
@@ -87,13 +66,6 @@ const FormSubmit = ({
    
     const [isProcessing, setIsProcessing] = useState(false);
     const [isLoaded, setIsLoaded] = useState(false);
-
-    //const [isDone, setIsDone] = useState(false);
-
-
-
- 
-
     //----------------------------------------------
     // Note: the empty deps array [] means
     // this useEffect will run once
@@ -363,10 +335,8 @@ const FormSubmit = ({
         }//== has_errors
 
 
-
-
-    
     }, [formArr])
+    //-------------------------------------------
 
 
 
@@ -1201,26 +1171,3 @@ const FormSubmit = ({
 
 export default FormSubmit;
 
-
-
-
-
-
-/*
-
-
-    //------------------------------------
-
-    const timer = setTimeout(() => {
-
-        setTimedMsg('Timeout called!');
-
-    }, 3000);
-
-    return () => clearTimeout(timer);
-
-    //-------------------------------------
-
-    
-
- */

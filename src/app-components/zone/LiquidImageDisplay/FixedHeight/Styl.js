@@ -4,8 +4,6 @@ import styled from "styled-components";
 
 
 
-
-
 /*
 
 Over 200 classes were generated for component styled.div with the id of "sc-AxirZ".
@@ -24,8 +22,6 @@ const Component = styled.div.attrs({
 */
 
   
-
-
 
 export const Grid = styled.div`
 

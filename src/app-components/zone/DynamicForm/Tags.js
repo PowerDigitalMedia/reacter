@@ -1,5 +1,3 @@
-
-
 import React, { 
 
     useState, 
@@ -53,11 +51,6 @@ import FormSubmit from './FormSubmit';
 
 
 
-
-//######################################################################
-//######################################################################
-//######################################################################
-
 const Tags = (props) => {
 
     const { width, height } = useWindowDimensions()
@@ -84,21 +77,13 @@ const Tags = (props) => {
     */
     
 
-    
-    //###########################################################
-    //###########################################################
-
-
-    const [hashData, setHash] = useState(false);
-    const [processForm, setProcessForm] = useState(false);
-
-    const [formArr, setFormArr] = useState([]);
-
-    const [problemArr, setProblemArr] = useState([]);
-
 
     //----------------------------------------------------------
-
+    const [hashData, setHash] = useState(false);
+    const [processForm, setProcessForm] = useState(false);
+    const [formArr, setFormArr] = useState([]);
+    const [problemArr, setProblemArr] = useState([]);
+    //----------------------------------------------------------
     // Note: the empty deps array [] means
     // this useEffect will run once
     // similar to componentDidMount()
@@ -861,123 +846,3 @@ const Tags = (props) => {
 }
 
 export default Tags;
-
-
-
-
-/*
-
-
-row = this.props.cells.map(function(cell, i) {
-    return (cell.URL != null && cell.URL.length > 0) ? 
-        (<td className={cell.Meta.HTMLClass} key={i}>{cell.Text}</td>) :
-        (<td className={cell.Meta.HTMLClass} key={i}>{cell.Text}</td>)
-}.bind(this));
-
-
-//-------------
-//or es6
-//-------------
-
-row = this.props.cells.map((cell, i) => (cell.URL != null && cell.URL.length > 0) ? 
-        (<td className={cell.Meta.HTMLClass} key={i}>{cell.Text}</td>) :
-        (<td className={cell.Meta.HTMLClass} key={i}>{cell.Text}</td>)
-);
-
-
-
-row = this.props.cells.map(function(cell, i) {
-
-    if(cell.URL != null && cell.URL.length > 0)
-        return <td className={cell.Meta.HTMLClass} key={i}>{cell.Text}</td>;    
-
-    return <td className={cell.Meta.HTMLClass} key={i}>{cell.Text}</td>;
-
-}.bind(this));
-
-
-
-
-
-condition1 ? "This is the IF" : condition2 ? "This is the ELSE IF" : "This is the ELSE"
-
-
-
-
-                                {
-                                //------------------------------------
-                                //checkboxes or radiobuttons
-                                //------------------------------------
-                                frm.section === "checkboxes" || frm.section === "radiobuttons" ? 
-
-
-                                    <div 
-                                    style={{
-
-                                    }}
-                                    >
-
-                                    </div>
-
-
-                                : frm.section === "radiobuttons" ? 
-
-                                    <div 
-                                    style={{
-
-                                    }}
-                                    >
-
-                                    </div>
-
-                    
-                                : null
-
-
-                                //--------------------------------------
-                                }
-                            
-
-
-                                {
-                                //------------------------------------
-                                //checkboxes or radiobuttons
-                                //------------------------------------
-                                frm.section === "checkboxes" || frm.section === "radiobuttons" ? 
-
-                                    <div 
-                                    style={{
-
-                                    }}
-                                    >
-
-                                    </div>
-
-                                : null
-                                //--------------------------------------
-                                }
-                            
-                            
-
-
-
-
-
-
-row = this.props.cells.map(function(cell, i) {
-
-    if(cell.URL != null && cell.URL.length > 0){
-        return <td className={cell.Meta.HTMLClass} key={i}>{cell.Text}</td>;        
-    }
-    else {
-        return <td className={cell.Meta.HTMLClass} key={i}>{cell.Text}</td>;
-    }
-
-}.bind(this));
-
-
-
-
-
-*/
-

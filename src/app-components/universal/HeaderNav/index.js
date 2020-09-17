@@ -1,7 +1,3 @@
-//===========================
-//react
-//===========================
-
 import React, { 
 
     useState, 
@@ -10,10 +6,6 @@ import React, {
 
 } from 'react';
 
-
-//===========================
-//react-router-dom
-//===========================
 
 import {
     //BrowserRouter as Router,
@@ -29,24 +21,14 @@ import {
 } from "react-router-dom";
   
 
-//===========================
-//HOOKS
-//===========================
-
+// -- hooks --
 //import { useLiquidNavBar } from '../../../utils/myHooks/LiquidFormula/NavBar';
 import { useWindowDimensions } from '../../../utils/WindowDimensionsProvider'
 
 
-//===========================
-//DATA
-//===========================
+
 
 import { Data } from './Data';
-
-
-//===========================
-//CSS
-//===========================
 
 import logo from '../../../grfx/logo.svg';
 import '../../../App.css';
@@ -54,62 +36,25 @@ import '../../../App.css';
 
 
 
-
-
-//######################################################
-//######################################################
-//######################################################
-
 const Index = (props) => {
 
-
-
-    //.log("HEADER PROPS zoneObj:" + props.zoneObj);
-
-
-
-
     const { width } = useWindowDimensions()
-
-    
 
     //let match = useRouteMatch();
     let location = useLocation();
     //let params = useParams();
- 
-    console.log("LOCATION: "+JSON.stringify(location,null,2));
-    //alert("MATCH: "+JSON.stringify(match,null,2));
 
-
-    //###################################################
-    //###################################################
 
     const [winThresh, setWinThresh] = useState(10000)
-
-    //const [shuttleWidth, setShuttleWidth] = useState(0)
-    //const [shuttleTop, setShuttleTop] = useState(5)
-    //const [shuttleLeft, setShuttleLeft] = useState(15)
-
-    //const [buttonHDif, setButtonHDif] = useState(5)
-
-    //const [headerHeight, setHeaderHeight] = useState(0)
-
-
     const refMain = useRef(null)
     const refNB = useRef(null)
     const refNBShut = useRef(null)
     
 
-
-    //===================================================
-
     let pathname = location.pathname;
 
     if(pathname.charAt(0) === '/') 
         pathname = pathname.substring(1,pathname.length);
-
-
-    //-------------------------------------------
 
 
     let thresh = {
@@ -119,8 +64,6 @@ const Index = (props) => {
         c:350
 
     };
-
-    //-------------------------------------------
 
     let navbarHInt = 40;
     let navbarH = navbarHInt + "px";
@@ -135,44 +78,11 @@ const Index = (props) => {
     };
 
  
-    //===================================================
-
-
  
-
-
-    
-
-
-
-
-
-
     //###################################################
     //###################################################
 
     useEffect(() => {
-
-
-        //var buttonHDif = (refNB.current.offsetHeight - refNBShut.current.offsetHeight)/2;
-        //setButtonHDif(buttonHDif);
-    
-
-        //var marleft = (refNB.current.offsetWidth - refNBShut.current.offsetWidth)/2;
-        //setShuttleLeft(marleft);
-
-        //var shuttleWidth = refNBShut.current.offsetWidth;
-        //setShuttleWidth(shuttleWidth);
-
-
-
-
-        //alert(refHdr.current.offsetHeight +"\n"+ refMain.current.offsetHeight +"\n"+ refNB.current.offsetHeight);
-    
-        //var headerHeight = refMain.current.offsetHeight + refNB.current.offsetHeight + "px";
-        //setHeaderHeight(headerHeight);
-
-
 
 
         var threshA = thresh['a'];
@@ -235,38 +145,12 @@ const Index = (props) => {
 
 
 
-
-/*
-
-    //###################################################
-    //###################################################
-
-    var gridWInt;
-    var gridW;
-    var gridMarl;
-
-    gridWInt = shuttleWidth;
-    gridW = gridWInt + "px";
-    //gridMarl = 0 + "px";
-    gridMarl = (width - gridWInt)/2 + "px";
-
-
-
-*/
-
-
-
-
-
-
     //###################################################
     //###################################################
 
     let array = [];
     //let array = Data[''];
-
     //var host = window.location.host;
-
 
     var navobj;
     var ar = Data['navigation'];
@@ -300,10 +184,6 @@ const Index = (props) => {
 
 
 
-
-
-
-    //######################################################
     //######################################################
     //######################################################
 
@@ -313,20 +193,6 @@ const Index = (props) => {
         <header 
         className="App-header"
         >
-
-
-
-
-            {
-            //######################################
-            //######################################
-
-            //MAIN
-
-            //######################################
-            //######################################
-            }
-
 
             <div 
             ref={refMain}
@@ -367,21 +233,6 @@ const Index = (props) => {
 
             </div>
 
-
-
-
-
-
-
-            {
-            //######################################
-            //######################################
-
-            //NAVBAR
-
-            //######################################
-            //######################################
-            }
 
 
             <div 

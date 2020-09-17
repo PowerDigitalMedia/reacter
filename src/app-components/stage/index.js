@@ -1,7 +1,3 @@
-//===========================
-//react
-//===========================
-
 import React, { 
 
     useState, 
@@ -9,12 +5,6 @@ import React, {
     useRef 
 
 } from 'react';
-
-
-
-//===========================
-//react-router-dom
-//===========================
 
 import {
     //BrowserRouter as Router,
@@ -30,40 +20,12 @@ import {
 } from "react-router-dom";
 
 
-//===========================
-//app-components
-//===========================
-
 import HeaderNav from "../universal/HeaderNav";
 import SubNav from "../universal/SubNav";
 import Zone from "../zone";
 
 
-
-//===========================
-// library
-//===========================
-
-//import { arraylib } from '../../library/array';
-//import { baselib } from '../../library/base';
-//import { elemlib } from '../../library/elem';
-//import { formlib } from '../../library/form';
-//import { stringlib } from '../../library/string';
-
-
-
-
-
-
-
-
-//######################################################
-//######################################################
-//######################################################
-
 const Index = () => {
-
-
 
     //let match = useRouteMatch();
     let location = useLocation();
@@ -73,20 +35,11 @@ const Index = () => {
     //alert("MATCH: "+JSON.stringify(match,null,2));
 
 
+    const [stageTopHeight, setStageTopHeight] = useState(50);
 
+    const refA = useRef(null);
+    const refB = useRef(null);
 
-
-
-    //###################################################
-    //###################################################
-
-    const [stageTopHeight, setStageTopHeight] = useState(50)
-
-    const refA = useRef(null)
-    const refB = useRef(null)
-
-
-    //===================================================
 
     let pathname = location.pathname;
 
@@ -94,8 +47,7 @@ const Index = () => {
         pathname = pathname.substring(1,pathname.length);
 
 
-    //===================================================
-
+    //================================================
 
     useEffect(() => {
 
@@ -105,8 +57,8 @@ const Index = () => {
     
     },[])
 
+    //================================================
     
-
 
     var hasSubNav = 0;
 
@@ -129,11 +81,6 @@ const Index = () => {
     }
 
   
-
-
-
-
-
 
     //###################################################
     //###################################################

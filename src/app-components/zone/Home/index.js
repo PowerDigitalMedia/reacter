@@ -1,7 +1,3 @@
-//=====================================
-//react
-//=====================================
-
 import React, { 
 
     useState, 
@@ -12,63 +8,29 @@ import React, {
 
 
 
-//=====================================
-//hooks
-//=====================================
-
+// -- hooks --
 import { useWindowDimensions } from '../../../utils/WindowDimensionsProvider'
 
 
-//=====================================
-// css
-//=====================================
+// -- utils --
+import NavGrid from '../../../utils/myBuilds/NavGrid/Tags';
 
+
+// -- css --
 import '../../../App.css';
 import "../../../app-style/area.css";
 
 
 
-//=====================================
-//utils
-//=====================================
-
-import NavGrid from '../../../utils/myBuilds/NavGrid/Tags';
-
-
-//=====================================
-//zoneObj
-//=====================================
-
 import { zoneObj } from './zoneObj';
 
-
-
-
-
-
-//###################################################################
-//###################################################################
-//###################################################################
 
 
 const Index = (props) => {
 
 
     const { height } = useWindowDimensions()
-
     const [scrollboxHeight, setScrollboxHeight] = useState(50)
-
-
-    //==================================================
-
-    //let match = useRouteMatch();
-    //let location = useLocation();
-    //let params = useParams();
-
-
-
-    //####################################################
-    //####################################################
 
     useEffect(() => {
 
@@ -85,32 +47,6 @@ const Index = (props) => {
     ])
     
 
-
-
-
-    /*
-    const gridInfo = {
-
-        data : Data.navigation,
-
-        gridCall : 'grid_row_cell',
-        cellBorderInfo : {
-
-            "boolean"       :true,
-            "thickness"     :1,//px
-            "color"         :"gray" 
-
-        }
-
-    };
-    */
-
-
-
-
-
-    //###################################################
-    //###################################################
 
     return (
 
@@ -159,7 +95,6 @@ const Index = (props) => {
             </div>
 
         </div>
-
 
 
     )

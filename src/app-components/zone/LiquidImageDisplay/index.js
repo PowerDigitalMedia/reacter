@@ -1,8 +1,4 @@
 
-//-------------------------------------
-//react
-//-------------------------------------
-
 import React, { 
 
     useState, 
@@ -11,11 +7,6 @@ import React, {
 
 } from 'react';
 
-
-
-//-------------------------------------
-//react-router-dom
-//-------------------------------------
 
 import {
 
@@ -31,57 +22,18 @@ import {
 
 
 
-
-//-------------------------------------
-//Transitions
-//-------------------------------------
-
-//import { CSSTransition } from 'react-transition-group';///NOT INSTALLED
-
-
-
-
-
-
-//-------------------------------------
-//hooks
-//-------------------------------------
-
+// -- utils --
 import { useWindowDimensions } from '../../../utils/WindowDimensionsProvider'
+import NavGrid from '../../../utils/myBuilds/NavGrid/Tags';
 
-
-
-
-//-----------------------------------
-// css
-//-----------------------------------
 
 import '../../../App.css';
 import "../../../app-style/area.css";
-
-
-
-
-//-----------------------------------
-// subsections
-//-----------------------------------
 
 import FlexHeight from './FlexHeight';
 import FixedHeight from './FixedHeight';
 //import { reduce } from 'async';
 
-
-
-//=====================================
-// utils
-//=====================================
-
-import NavGrid from '../../../utils/myBuilds/NavGrid/Tags';
-
-
-//=====================================
-// zoneObj
-//=====================================
 
 import { zoneObj } from './zoneObj';
 
@@ -90,25 +42,13 @@ import { zoneObj } from './zoneObj';
 
 
 
-//######################################################################
-//######################################################################
-//######################################################################
-
 const Index = (props) => {
 
 
-
-    //=================================================
-
     const { height } = useWindowDimensions()
-
-    //==================================================
-
     const [scrollboxHeight, setScrollboxHeight] = useState(50)
 
-
-    //==================================================
-
+   
     let data = props.data;
     let click = props.onClick;
 
@@ -120,14 +60,6 @@ const Index = (props) => {
     console.log("LOC: "+JSON.stringify(location,null,2));
     //console.log("PARAMS: "+JSON.stringify(params,null,2));
 
-    //==================================================
-
-
-
-
-
-    //####################################################
-    //####################################################
 
     useEffect(() => {
 
@@ -143,24 +75,15 @@ const Index = (props) => {
     ])
     
 
-
-
-
     var inProp = true;
  
-
-
-
-
-    //####################################################
-    //####################################################
 
     return (
 
 
         <div className="App-stage">
 
-        
+
 
             <div 
             id="scrollbox"
@@ -172,8 +95,7 @@ const Index = (props) => {
             
             >
 
-               
-
+        
                 <div 
                 className="area"
                 style={{
@@ -184,42 +106,6 @@ const Index = (props) => {
 
                 }}
                 >
-
-
-                    {/*
-
-                    <div className="area-title">Liquid Image Display</div>
-
-
-                    <ul>
-
-
-                        <li>
-                        <Link to={`${match.url}`}>
-                            Liquid Home
-                        </Link>
-                        </li>
-
-
-                        <li>
-                        <Link to={`${match.url}/flexible-height`}>
-                            Flexible Height
-                        </Link>
-                        </li>
-
-                        <li>
-                        <Link to={`${match.url}/fixed-height`}>
-                            Fixed Height
-                        </Link>
-                        </li>
-
-                    </ul>
-
-
-                    */}
-
-
-
 
                     {/* 
                         The Topics page has its own <Switch> with more routes
@@ -286,36 +172,7 @@ const Index = (props) => {
                         </Route>
 
 
-
                         <Route path={match.path}>
-
-
-
-                        {/* 
-                            <div>
-
-                                <h3>Please select a topic.</h3>
-
-                                <div>
-
-                                    <p>
-                                        <strong>Match Props: </strong>
-                                        <code>{JSON.stringify(match, null, 2)}</code>
-                                    </p>
-                                    <p>
-                                        <strong>Location Props: </strong>
-                                        <code>{JSON.stringify(location, null, 2)}</code>
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        */}
-
-
-
-     
 
                             <NavGrid gridInfo={{
 
@@ -332,11 +189,8 @@ const Index = (props) => {
 
                             }} />
 
-
                         
                         </Route>
-
-
 
                     </Switch>
 
@@ -360,48 +214,3 @@ const Index = (props) => {
 
 export default Index
 
-
-
-
-
-
-
-
-/*
-<CSSTransition in={inProp} timeout={200} classNames="fade-enter">
-</CSSTransition>
-
-
-
-
-
-
-<CSSTransition
-    in={showMessage}
-    timeout={300}
-    classNames="alert"
-    unmountOnExit
-    onEnter={() => setShowButton(false)}
-    onExited={() => setShowButton(true)}
->
-    <Alert
-        variant="primary"
-        dismissible
-        onClose={() => setShowMessage(false)}
-    >
-    <Alert.Heading>
-        Animated alert message
-    </Alert.Heading>
-        <p>
-            This alert message is being transitioned in and
-            out of the DOM.
-        </p>
-        <Button onClick={() => setShowMessage(false)}>
-            Close
-        </Button>
-    </Alert>
-
-</CSSTransition>
-
-
-*/

@@ -8,8 +8,6 @@ import React, {
 } from 'react';
 
 
-
-
 import {
 
     //BrowserRouter as Router,
@@ -25,78 +23,39 @@ import {
 
 
 
-//===========================
-//CSS
-//===========================
-
-import '../../../App.css';
-
-
-//===========================
-//HOOKS
-//===========================
+// -- hooks --
 
 //import { useLiquidNavBar } from '../../../utils/myHooks/LiquidFormula/NavBar';
 import { useWindowDimensions } from '../../../utils/WindowDimensionsProvider'
 
 
 
-
-//===========================
-//DATA
-//===========================
-
+import '../../../App.css';
 import { Data } from './Data';
 
 
 
 
-
-
-//######################################################
-//######################################################
-//######################################################
-
 const Index = (props) => {
 
 
-
-
     const { width } = useWindowDimensions()
-
-    
 
     //let match = useRouteMatch();
     let location = useLocation();
     //let params = useParams();
  
-    //alert("LOCATION: "+JSON.stringify(location,null,2));
-    //alert("MATCH: "+JSON.stringify(match,null,2));
-
-
-    //###################################################
-    //###################################################
-
-    //const [shuttleWidth, setShuttleWidth] = useState(0)
     const [shuttleLeft, setShuttleLeft] = useState(0)
     const [winThresh, setWinThresh] = useState(10000)
 
     const refA = useRef(null)
     const refB = useRef(null)
 
-
-
-
-    //===================================================
-
     let pathname = location.pathname;
 
     if(pathname.charAt(0) === '/') 
         pathname = pathname.substring(1,pathname.length);
 
-
-
-    //-------------------------------------------
 
     let thresh = {
 
@@ -105,9 +64,6 @@ const Index = (props) => {
         c:350
 
     };
-
-    //-------------------------------------------
-
 
     let subnavH = "0px";
 
@@ -125,14 +81,7 @@ const Index = (props) => {
     
     }
     
-    //===================================================
-
-
-
-
-
-
-
+   
 
     //###################################################
     //###################################################
@@ -208,31 +157,6 @@ const Index = (props) => {
 
 
 
-
-/*
-
-    //###################################################
-    //###################################################
-
-    var gridWInt;
-    var gridW;
-    var gridMarl;
-
-    gridWInt = shuttleWidth;
-    gridW = gridWInt + "px";
-    //gridMarl = 0 + "px";
-    gridMarl = (width - gridWInt)/2 + "px";
-
-
-
-*/
-
-
-
-
-
-
-
     //###################################################
     //###################################################
 
@@ -286,12 +210,6 @@ const Index = (props) => {
 
 
 
-
-
-
-
-
-    //###################################################
     //###################################################
     //###################################################
 

@@ -8,23 +8,10 @@ import {
 } from "react-router-dom";
 
 
-
-//===========================
-//PAGES
-//===========================
-
 import Home from "./Home";
 import LiquidImageDisplay from "./LiquidImageDisplay";
 import DynamicForm from "./DynamicForm";
 
-
-
-
-
-
-//######################################################
-//######################################################
-//######################################################
 
 
 const lorem = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sed iure blanditiis voluptatum nulla quidem minus quam tempora obcaecati necessitatibus inventore! Vitae totam quam pariatur facilis fugit maxime adipisci eaque.";
@@ -282,7 +269,6 @@ const testData = [
 
 //######################################################
 //######################################################
-//######################################################
 
 function handleClick(v){
 
@@ -304,7 +290,6 @@ function handleClick(v){
 
 
 
-//######################################################
 //######################################################
 //######################################################
 
